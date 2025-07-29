@@ -1,72 +1,63 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fa;
-  color: #2d3436;
+  background: #f3f3f3;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.container {
-  text-align: center;
+.calculator {
+  background: #222;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  width: 300px;
   padding: 20px;
 }
 
-header {
-  background-color: #2d3436;
-  color: white;
-  padding: 40px 20px;
-}
-
-header h1 {
-  margin-bottom: 10px;
-}
-
-header nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-.section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #0984e3;
-}
-
-.project {
-  background: #dfe6e9;
+.display {
+  background: #000;
+  color: #0f0;
+  font-size: 2.5rem;
+  text-align: right;
   padding: 20px;
-  margin: 15px 0;
   border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
-li {
-  margin-bottom: 10px;
-}
-
-.contact a {
-  color: #0984e3;
-  text-decoration: none;
-}
-
-footer {
-  background: #636e72;
+.btn {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #444;
   color: white;
-  text-align: center;
-  padding: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.operator {
+  background: #fe9241;
+}
+
+.equal {
+  background: #00b894;
+  grid-column: span 2;
+}
+
+.clear {
+  background: #d63031;
+  grid-column: span 4;
 }

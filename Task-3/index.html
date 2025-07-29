@@ -3,72 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Greeshma Guntupalli - Portfolio</title>
+  <title>Basic Calculator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="/">÷</button>
 
-  <header>
-    <div class="container">
-      <h1>Greeshma Guntupalli</h1>
-      <p>B.Tech CSE (DS) | BS in Data Science | Developer & AI/ML Enthusiast</p>
-      <nav>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="*">×</button>
+
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn operator" data-value="-">−</button>
+
+      <button class="btn" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn equal" id="equals">=</button>
+      <button class="btn operator" data-value="+">+</button>
+
+      <button class="btn clear" id="clear">C</button>
     </div>
-  </header>
+  </div>
 
-  <section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, C, C++, Java, JavaScript, TypeScript, SQL</li>
-      <li><strong>Frontend:</strong> HTML, CSS, Tailwind CSS, Bootstrap, React.js</li>
-      <li><strong>Backend:</strong> Node.js, Express.js, Firebase</li>
-      <li><strong>Databases:</strong> PostgreSQL, MongoDB</li>
-      <li><strong>Cloud & Tools:</strong> GCP, AWS, Git, Postman, Tableau, Power BI</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Fact Funders – Decentralized Crowdfunding Platform</h3>
-      <p>Built a milestone-based funding release mechanism using Algorand blockchain and community governance.</p>
-    </div>
-    <div class="project">
-      <h3>Mentor Connect – Smart Mentorship System</h3>
-      <p>Platform for mentor-student matching with Google Meet integration and real-time scheduling.</p>
-    </div>
-    <div class="project">
-      <h3>Payment Analytics Dashboard</h3>
-      <p>Analyzed transaction trends using Plotly & Dash; achieved 80% pattern detection accuracy.</p>
-    </div>
-  </section>
-
-  <section id="experience" class="section">
-    <h2>Experience & Achievements</h2>
-    <ul>
-      <li><strong>Chair, IEEE CIS Chapter:</strong> Organized workshops & competitions.</li>
-      <li><strong>Lead, Algorand Blockchain Club:</strong> Conducted bootcamps on smart contracts.</li>
-      <li><strong>Google Cloud Facilitator:</strong> Mentored 100+ students on GCP labs.</li>
-      <li><strong>AI/ML Intern at NIELIT:</strong> Developed fraud detection model with 95% AUC.</li>
-      <li><strong>Achievements:</strong> Finalist - Smart India Hackathon & Algorand Live Hack</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:greeshmahvs370@gmail.com">greeshmahvs370@gmail.com</a></p>
-    <p>Phone: <a href="tel:+919381340136">+91 93813 40136</a></p>
-    <p>GitHub: <a href="https://github.com/Greeshma370" target="_blank">github.com/Greeshma370</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Greeshma Guntupalli</p>
-  </footer>
-
+  <script src="app.js"></script>
 </body>
 </html>
